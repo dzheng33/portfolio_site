@@ -1,0 +1,343 @@
+.navbar-brand img {
+    width: 45px;
+    border-radius: 50%;
+}
+
+.jumbotron {
+    background-image: url(img/atlpic.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.jumbocontainer {
+    margin-top: 10%;
+}
+
+.arrowsvg {
+    width: 40px;
+    margin-top: 30px;
+}
+
+#about::before {
+    display: block; 
+    content: " "; 
+    margin-top: -78px; 
+    height: 78px; 
+    visibility: hidden; 
+    pointer-events: none;
+}
+
+#portfolio::before {
+    display: block; 
+    content: " "; 
+    margin-top: -50px; 
+    height: 50px; 
+    visibility: hidden; 
+    pointer-events: none;
+}
+
+.bounce {
+    animation: bounce 2s ease-in infinite;
+  }
+  
+@keyframes bounce {
+
+        0%,
+        25%,
+        50%,
+        75%,
+        100% {
+        transform: translateY(0);
+    }
+        40% {
+        transform: translateY(-18px);
+    }
+         60% {
+        transform: translateY(-14px);
+    }
+}
+
+.bio-div {
+    text-align: center;
+}
+
+.davidpic {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.davidpic:hover,
+#msg-button:hover {
+    cursor: pointer;
+}
+
+.bio {
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.sfa-div img{
+    width: 100%;
+}
+
+#portfolio h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+.portfolio-desc {
+	font-size: 1rem;
+    line-height: 1;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.portfolio-photo {
+	position: relative;
+	line-height: 0;
+	margin-bottom: 2rem;
+    overflow: hidden;
+    border: 1px solid black;
+
+}
+
+.portfolio-container {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.portfolio-container img {
+     max-width: 100%;
+     height: 188px;
+}
+
+.button-div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.button {
+	width: 45%;
+	display: block;
+	border: 1px solid darkgray;
+    border-radius: .5em;
+    text-align: center;
+    font-weight: 600;
+    font-family: Helvetica, sans-serif;
+    color: white;
+	padding: 20px;
+	background: darkgray;
+	margin-top: 10px;
+}
+
+.photo-overlay {
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0; 
+	left: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+    display: flex; 
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.photo-overlay h3 {
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.slide .photo-overlay {
+	opacity: 1;
+	background: black;
+}
+
+.photo-overlay {
+	opacity: 0;
+	transition: opacity .5s;
+}
+.photo-overlay:hover {
+	opacity: 1;
+}
+
+.button {
+	transition: background .3s, color .3s;
+}
+.button:hover {
+	color: #fff;
+	background: gray;
+}
+
+.slide .photo-overlay,
+.slide img {
+  transition: transform .8s ease-out;
+}
+
+
+.slide .photo-overlay {
+  transform: translateX(-100%);
+}
+
+.slide:hover .photo-overlay {
+  transform: translate(0);
+}
+
+.slide:hover img {
+  transform: translateX(100%);
+}
+
+.connect-w-me {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Helvetica, sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.social-svg {
+    width: 70px;
+    display: inline-block;
+}
+
+.social-flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.github-icon,
+.fb-icon,
+.ld-icon,
+.gm-icon {
+    transition: fill 1s ease-in-out;
+}
+
+.social-svg:hover .github-icon{
+    fill: #666666;
+}
+
+.social-svg:hover .fb-icon {
+    fill: blue;
+}
+
+.social-svg:hover .ld-icon {
+    fill: #247FA6;
+}
+
+.social-svg:hover .gm-icon {
+    fill: red;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+ 
+}
+
+#msg-button {
+    height: 40px;
+}
+
+#cpyright {
+    color: white;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    
+    .arrowsvg {
+        width: 40px;
+        margin-top: 50px;
+    }
+
+    .portfolio-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (min-width: 1024px){
+    
+    .portfolio-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media (min-width: 1200px) {
+
+    .davidpic {
+        width: 300px;
+    }
+    
+    .lead {
+        font-size: 1.5rem;
+
+    }
+
+    .jumbotron {
+        min-height: 100vh;
+    }
+
+    .jumbocontainer {
+        margin-top: 12%;
+    }
+
+    .jumbocontainer .lead,
+    .jumbocontainer .display-2 {
+        font-weight: 450;
+    }
+
+    .arrowsvg {
+        width: 45px;
+        margin-top: 120px;
+    }
+
+    #about {
+        margin-top: 2.5rem;
+    }
+
+    .about-header {
+        margin-bottom: 3rem;
+    }
+
+    .bio-div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    .bio {
+        text-align: justify;
+        margin-left: 30px;
+        
+    }
+
+    .portfolio-content {
+        margin-top: 3rem;
+    }
+
+    .portfolio-container {
+        width: 90%;
+    }
+
+    .connect-w-me {
+        margin-top: 3rem;
+    }
+
+}
