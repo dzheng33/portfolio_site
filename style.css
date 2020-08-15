@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .navbar-brand img {
     width: 45px;
     border-radius: 50%;
@@ -225,7 +229,7 @@
 }
 
 .social-svg:hover .github-icon{
-    fill: #666666;
+    fill: purple;
 }
 
 .social-svg:hover .fb-icon {
