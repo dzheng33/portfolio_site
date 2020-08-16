@@ -24,3 +24,7 @@ send.addEventListener("click", function(){
         alert("Message successfully sent!");
     }
 });
+
+function viewResume(){
+    window.open("resume.pdf");
+}
