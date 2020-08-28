@@ -26,5 +26,5 @@
 // });
 
 function viewResume(){
-    window.open("resume.pdf");
+    window.open("newresume.pdf");
 }
