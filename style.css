@@ -70,8 +70,6 @@ html {
     border-radius: 50%;
 }
 
-pic
-
 #msg-button:hover {
     cursor: pointer;
 }
@@ -84,6 +82,26 @@ pic
 
 .sfa-div img{
     width: 100%;
+}
+
+.skillsheader {
+    margin-top: 20px;
+}
+
+.logoimg {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.logosvg {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.logo-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 #portfolio h2 {
@@ -270,6 +288,10 @@ footer {
         margin-top: 50px;
     }
 
+    .logo-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     .portfolio-content {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -280,6 +302,10 @@ footer {
     
     .portfolio-content {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .skillsheader {
+        font-size: 1.8rem;
     }
 }
 
@@ -331,6 +357,14 @@ footer {
         text-align: justify;
         margin-left: 30px;
         
+    }
+
+    .logo-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .skillsheader {
+        margin-bottom: 15px;
     }
 
     .portfolio-content {
